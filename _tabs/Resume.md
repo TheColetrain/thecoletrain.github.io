@@ -8,7 +8,7 @@ tags: resume
 
 
 
-#**Cole Edwards**
+# **Cole Edwards**
 
 
 
