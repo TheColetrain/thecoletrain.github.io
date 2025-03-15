@@ -84,8 +84,8 @@ toc: true
 Techno Tim talks in his video about this. Chekc that out. Says some important things, like lower case.  I am continuing that and explaining more about `tags` and `categories`  *What do they do?"* 😕 On the website on the left, there are sections labeled *tags* and *categories*  if you do this right, your tags and acetegories will show up there.
 - `categories` are like a file folder sytem.  My main category in this instance is "homelab" and my subfolder is "website."  If I do other projects that are "homelab" they will go there, but if the second tag on the next project is them "kuberneties" then there will b a new sub folder there.  Check out my Categories section, if you want to see.
 - `tags` are just that, and you can have a lot of them.  These are all going to be clustered on that page.
-Lookat the above, and look at my site, hopefully this makes sense. On the home page they are the big words on the left. However, you are pretty close to the bottom of this page, and they are on the bottom of the page too! Hopefully I have helped explain, becasue I did not understand before.
-  `tags` and `categories` are very much the same, but yet very different.  :smile:
+Look at the above, and look at my site, hopefully this makes sense. On the home page they are the big words on the left. However, you are pretty close to the bottom of this page, and they are on the bottom of the page too! Hopefully I have helped explain, becasue I did not understand before.
+  `tags` and `categories` are very much the same, but yet very different. 
   Here is the wiki on it, but it did not help me understand.
 >>>>[Chirpy Wiki - Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post)
 
