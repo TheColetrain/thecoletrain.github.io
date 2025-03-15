@@ -5,6 +5,8 @@
   Categories:  Jekyll Chirpy Tech
   Tags: Jekyll Chirpy Static Site Generator
   permalink: /jekyll/
+  pin: true
+
 ---
 
 
