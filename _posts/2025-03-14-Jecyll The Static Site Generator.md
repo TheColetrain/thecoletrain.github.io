@@ -2,13 +2,14 @@
 title:  "Jekyll"
 date: 2025-03-14 10:03:00 CST
 layout: post
-categories:  [web, resume]
+categories:  [homelab, website]
 tags: [jekyll, chirpy, github, docker, static site generator]   # Tag names should always be lowercase
 permalink: /jekyll/
 pin: true
+toc: true
 ---
 
-# The Jekyll Project
+# The Jekyll Project - 
 
 I wanted to create a website to showcase my resume and highlight some fun projects I've worked on. Techno Tim is one of my favorite YouTubers and tech enthusiasts, and he runs an awesome Discord. Naturally, I decided to follow his approach.
 
@@ -24,17 +25,19 @@ Here are Jekyll installation notes: [Jekyll - Installation](https://jekyllrb.com
 
 Here are Chirpy Notes:  [Chirpy - Getting Started](https://chirpy.cotes.page/posts/getting-started/)
 
+# Viewing the site Internally
 
- ## 1. The first issue I encountered was getting the local site running. I was using a VM on Proxmox and tried accessing it:
+### 1. The first issue I encountered was getting the local site running. I was using a VM on Proxmox and tried accessing it:
   - Via the VM IP + Port (e.g. `192.168.10.55:4000`) *did not work* 
   - `localhost:4000` *did not work* 
   - In the short term, **`http://127.0.0.1:4000`** worked.  (But I did not think to try it for some time. I mistakingly thought localhost and 127.0.0.1 were the same, andthey are not. Seems easy now, but it took me a while before i realized. 😖 )  
   
-  ## 2. I got it working using VS Code. 
+### 2. I got it working using VS Code. 
     **If you are using Dev Containers, run the command in the VS Code Terminal.**
   [Chirpy Getting Started](https://chirpy.cotes.page/posts/getting-started/)
   (Look for the command highlighted in blue further down the page.)
-  ## 3. Additionally, add the following to the top of your `_config.yml` (My favorite solution!):
+
+### 3. Additionally, add the following to the top of your `_config.yml` (My favorite solution!):
  ```yml
  # Server settings
  host: 192.168.1.55
@@ -55,7 +58,7 @@ Once you get it up and running, I guess all these Tech guys just know things int
 
 **For a new post**: Put the markdown file under `_posts/` with the correct filename format (`YEAR-MONTH-DAY-title.md`).  It will then be generated into the `_site/posts` folder.
 
-> ### To summarize:
+# To summarize:
 >
 > - **Do Not** manually put new files in `_site`.
 > - Place new posts in `_posts` With the date in the file name, properly formatted.
@@ -65,7 +68,7 @@ Once you get it up and running, I guess all these Tech guys just know things int
 ---
 ---
 
-## PUSH TO GITHUB
+# Push To Github - get it online in the real world
 - `git status` Should show nothing at first, but could show pending changes.
 - `git add .`    (Don't forget the period)
 - `git status` will show green now.
