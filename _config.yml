@@ -3,6 +3,15 @@
 # Import the theme
 theme: jekyll-theme-chirpy
 
+#>>>>>>>>>>>>> Cole added
+# Server settings
+host: 192.168.10.55
+port: 4314
+#>>>>>>>>>>>>>>
+
+
+
+
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
@@ -75,8 +84,7 @@ analytics:
 
 # Page views settings
 pageviews:
-  provider: <script data-goatcounter="https://thecoletrain.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script> # now only supports 'goatcounter'
+  provider:goatcounter
 
 # Prefer color scheme setting.
 #
@@ -151,7 +159,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: #"https://github.com/TheColetrain"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
