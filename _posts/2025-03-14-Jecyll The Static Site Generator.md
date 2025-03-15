@@ -2,8 +2,8 @@
   title:  "Jekyll"
   Date: 2025-3-14 10:03:00 CST
   layout: post
-  Categories:  Jekyll Chirpy Tech
-  Tags: Jekyll Chirpy Static Site Generator
+  Categories:  [web, resume]
+  Tags: [jekyll,chirpy,static site generator]   # Tag names should always be lowercase
   permalink: /jekyll/
   pin: true
 
