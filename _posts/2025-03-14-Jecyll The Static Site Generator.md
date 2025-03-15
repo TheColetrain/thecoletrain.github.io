@@ -30,7 +30,7 @@ Here are Chirpy Notes:  [Chirpy - Getting Started](https://chirpy.cotes.page/pos
  ## 1. The first issue I encountered was getting the local site running. I was using a VM on Proxmox and tried accessing it:
   - Via the VM IP + Port (e.g. `192.168.10.55:4000`) *did not work* 
   - `localhost:4000` *did not work* 
-  - In the short term, **`http://127.0.0.1:4000`** worked.  (But I did not think to try it for some time. I mistakingly thought localhost and 127.0.0.1 were the same, andthey are not. Seems easy now, but it took me a while before i realized. :confounded: )  
+  - In the short term, **`http://127.0.0.1:4000`** worked.  (But I did not think to try it for some time. I mistakingly thought localhost and 127.0.0.1 were the same, andthey are not. Seems easy now, but it took me a while before i realized. 😖 )  
   
   ## 2. I got it working using VS Code. 
     **If you are using Dev Containers, run the command in the VS Code Terminal.**
