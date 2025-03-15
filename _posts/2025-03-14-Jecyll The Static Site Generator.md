@@ -1,5 +1,6 @@
 ---
 title:  "Jekyll"
+description: Making a website with Jekyll, Chirpy, and GitHub (Using a Youtube guide from Techno Tim)
 date: 2025-03-14 10:03:00 CST
 layout: post
 categories:  [homelab, website]
@@ -65,10 +66,35 @@ Once you get it up and running, I guess all these Tech guys just know things int
 > - Static files or content like tabs might go in `_tabs`
 
 
+# Tags and Categories
+If you are using Chirpy, you need to figure out Tags and Categories. They will go in the heading syntax, in yaml format.  I will paste mine here without the lines "-" so you can see how it looks.
+
+```yaml
+title:  "Jekyll"
+description: Making a website with Jekyll, Chirpy, and GitHub (Using a youtube guide from Techno Tim)
+date: 2025-03-14 10:03:00 CST
+layout: post
+categories:  [homelab, website]
+tags: [jekyll, chirpy, github, docker, static site generator]   # Tag names should always be lowercase
+permalink: /jekyll/
+pin: true
+toc: true
+
+```
+Techno Tim talks in his video about this. Chekc that out. Says some important things, like lower case.  I am continuing that and explaining more about `tags` and `categories`  *What do they do?"* 😕 On the website on the left, there are sections labeled *tags* and *categories*  if you do this right, your tags and acetegories will show up there.
+- `categories` are like a file folder sytem.  My main category in this instance is "homelab" and my subfolder is "website."  If I do other projects that are "homelab" they will go there, but if the second tag on the next project is them "kuberneties" then there will b a new sub folder there.  Check out my Categories section, if you want to see.
+- `tags` are just that, and you can have a lot of them.  These are all going to be clustered on that page.
+Lookat the above, and look at my site, hopefully this makes sense. Hopefully I have helped explain, becasue I did not understand before.
+Here is the wiki on it, but it did not help me understand.  `tags` and `categories` are very much the same, but yet very different.  :smile:
+
+>>>>[Chirpy Wiki - Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post)
+
+
+
 ---
 ---
 
-# Push To Github - get it online in the real world
+# Push To Github - Get it online, in the real world!
 - `git status` Should show nothing at first, but could show pending changes.
 - `git add .`    (Don't forget the period)
 - `git status` will show green now.
