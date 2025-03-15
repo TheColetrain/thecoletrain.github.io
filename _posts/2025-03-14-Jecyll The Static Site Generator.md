@@ -1,14 +1,12 @@
 ---
-  title:  "Jekyll"
-  date: 2025-03-14 10:03:00 CST
-  layout: post
-  categories:  [web, resume]
-  tags: [jekyll, chirpy, static site generator]   # Tag names should always be lowercase
-  permalink: /jekyll/
-  pin: true
-
+title:  "Jekyll"
+date: 2025-03-14 10:03:00 CST
+layout: post
+categories:  [web, resume]
+tags: [jekyll, chirpy, github, docker, static site generator]   # Tag names should always be lowercase
+permalink: /jekyll/
+pin: true
 ---
-
 
 # The Jekyll Project
 
