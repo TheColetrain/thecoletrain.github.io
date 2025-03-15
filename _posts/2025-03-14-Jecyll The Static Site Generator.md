@@ -1,14 +1,16 @@
 ---
-title:  Jekyll
-Date: 2025-3-14
-Categories:  Jekyll Chirpy
-Tags: Jekyll Chirpy Static Site Generator
+  title:  "Jekyll"
+  Date: 2025-3-14 10:03:00 CST
+  layout: post
+  Categories:  Jekyll Chirpy Tech
+  Tags: Jekyll Chirpy Static Site Generator
+  permalink: /jekyll/
 ---
 
 
 # THE JEKYLL PROJECT
 
-I wanted to make a website with my resume and to highlight some fun projects I have done.  TechnoTim is one of my favorite YouTubers and he has a great discord.  So naturally, I wanted to do what he does.
+I wanted to make a website with my resume and to highlight some fun projects I have done.  TechnoTim is one of my favorite YouTubers and he has a great Discord.  So naturally, I wanted to do what he does.
 
 I would advise to follow his guide and his notes, but then I will try and add some more notes, if you get stuck.
 
@@ -27,25 +29,25 @@ Here are Chirpy Notes  [Chirpy - Getting Started](https://chirpy.cotes.page/post
 
  - <h1>2 </h1> How I actually got it to work in the first place is with VS Code. -  Half way down the page in blue. 
  >If you are using Dev Containers, you must run that command in the VS Code Terminal.`<  
- [Chirpy Getting started] (https://chirpy.cotes.page/posts/getting-started/)
+ [Chirpy Getting started](https://chirpy.cotes.page/posts/getting-started/)
  
- - <h1> 3 </h1> Also, you can add this to the top of your `_config.yml`
+ - <h1> 3 </h1> Also, you could add this to the top of your `_config.yml`  And This is my favorite, now that I know.
  ```yml
  # Server settings
  host: 192.168.1.55
  port: 4314
  ```
 
-<h2> Here is a quote for you. <h3>
+## Here is a quote for you. 
+
 "Once you know what you are doing, it is really easy.  When you do NOT know what you are doing, it is really hard."
 <br>
 <br>
-<br>
 
 
-Site Structure
-=============
-Once you get it up and running, I guess all these Tech guys just know things intuitively.  But I dod not.  I did not know what the header meant, what all the codes were.
+Site Structure <br>
+=======================
+<br> Once you get it up and running, I guess all these Tech guys just know things intuitively.  But I dod not.  I did not know what the header meant, what all the codes were.
 
   ***`_site` Directory***:  This is the output directory where Jekyll generates the static site. You **do not** put your new files here directly. Instead, Jekyll automatically builds your site into the `_site` folder when you run `jekyll build`. It contains the final, generated HTML files, along with any other assets that Jekyll processes.
 
