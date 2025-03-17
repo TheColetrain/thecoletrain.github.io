@@ -10,6 +10,10 @@ pin: true
 toc: true
 ---
 
+
+
+
+
 # The Jekyll Project - 
 
 I wanted to create a website to showcase my resume and highlight some fun projects I've worked on. Techno Tim is one of my favorite YouTubers and tech enthusiasts, and he runs an awesome Discord. Naturally, I decided to follow his approach.

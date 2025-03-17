@@ -21,8 +21,10 @@ APT-Cacher-NG is designed to cache Ubuntu, Debian and other Linux distrobutions 
 3. We are helping Linux, being a good steward of the internet.  If we all do this, that will be less download bandwidth on these distro's.  That will allow them to designate resources elsewhere than handling all the requests.
 
 
+[ANCHOR LINK TEST](https://vscode.dev/github/TheColetrain/thecoletrain.github.io/blob/main/_posts/draft-2025-03-17-APT-Cacher-NG.md#L24)
+
 ## Reccomendation.  Should you do this on your server?
-> ### Short answer is YES! (if you know you are "doing this" and need a guide, skip over it and get to the "How To area".)
+> ### Short answer is YES! (if you know you are "doing this" and need a guide, skip over the rest of this section and get to the "How To area".)
 - I will guide you through a "basic" method, this method will have you set up and running in minutes!  Roughly only a few *copy pasta* steps to get APT Casher NG running!  The basic method is so easy, even I can do it. So for the time spent to get anything done is a WIN.  Amount Cached / Time Spent = Winner Winner Chicken dinner.
 - I will also then advise of the advanced options and "tweeks" if you want to mess with it further.  If you want it to be as efficient as possible.
 > ### The long answer is maybe...

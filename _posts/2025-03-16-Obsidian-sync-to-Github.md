@@ -11,6 +11,8 @@ toc: true
 ---
 
 
+
+
 # Goal - Sync Obsidian with GitHub
 ## Purpose
 I want to sync my Obsidian notes with GitHub so I could back the data up and also learn about the process. Also, It can sync across devices.
