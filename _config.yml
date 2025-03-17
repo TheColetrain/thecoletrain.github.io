@@ -129,7 +129,7 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
-    repo_id:
+    repo_id: thecoletrain.github.io
     category:
     category_id:
     mapping: # optional, default to 'pathname'
