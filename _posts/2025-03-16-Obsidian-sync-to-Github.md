@@ -25,11 +25,11 @@ I want to sync my Obsidian notes with GitHub so I could back the data up and als
 ## Guide Used (My Revision of the Guide Below)
 -I liked this guide for generating the token. However, the linked guide is ambiguous about the token’s duration, and the video doesn’t set an expiration. “Security is not convenient.” Your call. [Token guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) I revised this guide a bit to what is below
 
-1. In the upper-right corner of any page on GitHub, click your profile photo, then select  Settings.
+1. In the upper-right corner of any page on GitHub, click your profile photo, then select **Settings**.
 2. In the left sidebar, click **Developer settings**.
 3. In the left sidebar, under **Personal access tokens** click **Tokens (classic)**.
 4. Select **Generate new token**, then **click Generate new token (classic)**.
-5. In the "Note" field, give your token a descriptive name.
+5. In the **"Note"** field, give your token a descriptive name.
 6. Choose the expiration length
 7. You only need to check **Repo**
 8. Click **Generate token.**
