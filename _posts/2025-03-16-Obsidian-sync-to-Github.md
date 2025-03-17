@@ -6,8 +6,6 @@ layout: post
 categories: [homelab, notes]
 tags: [obsidian, GitHub, git, sync, token]   # Tag names should always be lowercase
 permalink: /obsidian/
-pin: no
-toc: true
 ---
 
 

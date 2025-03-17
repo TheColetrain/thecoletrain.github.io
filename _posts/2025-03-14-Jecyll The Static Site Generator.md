@@ -7,7 +7,6 @@ categories:  [homelab, website]
 tags: [jekyll, chirpy, github, docker, static site generator]   # Tag names should always be lowercase
 permalink: /jekyll/
 pin: true
-toc: true
 ---
 
 
@@ -51,7 +50,8 @@ Here are Chirpy Notes:  [Chirpy - Getting Started](https://chirpy.cotes.page/pos
 
 ## Here is a quote for you. 
 
-"Once you know what you are doing, it is really easy.  When you do NOT know what you are doing, it is really hard." :laughing:
+*"Once you know what you are doing, it is really easy.  When you do NOT know what you are doing, it is really hard."*
+:-)
 
 
 # Site Structure
@@ -85,7 +85,7 @@ pin: true
 toc: true
 
 ```
-Techno Tim talks in his video about this. Chekc that out. Says some important things, like lower case.  I am continuing that and explaining more about `tags` and `categories`  *What do they do?"* 😕 On the website on the left, there are sections labeled *tags* and *categories*  if you do this right, your tags and acetegories will show up there.
+Techno Tim talks in his video about this. Check that out. Says some important things, like lower case.  I am continuing that and explaining more about `tags` and `categories`  *What do they do?"* 😕 On the website on the left, there are sections labeled *tags* and *categories*  if you do this right, your tags and acetegories will show up there.
 - `categories` are like a file folder sytem.  My main category in this instance is "homelab" and my subfolder is "website."  If I do other projects that are "homelab" they will go there, but if the second tag on the next project is them "kuberneties" then there will b a new sub folder there.  Check out my Categories section, if you want to see.
 - `tags` are just that, and you can have a lot of them.  These are all going to be clustered on that page.
 Look at the above, and look at my site, hopefully this makes sense. On the home page they are the big words on the left. However, you are pretty close to the bottom of this page, and they are on the bottom of the page too! Hopefully I have helped explain, becasue I did not understand before.
