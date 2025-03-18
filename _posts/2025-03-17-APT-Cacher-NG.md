@@ -22,8 +22,6 @@ APT-Cacher-NG is designed to cache Ubuntu, Debian, and other Linux distributions
 3. We are helping Linux, being a good steward of the internet.  If we all do this, that will be less download bandwidth on these distro's.  That will allow them to allocate resources elsewhere than handling all the requests.
 
 
-[ANCHOR LINK TEST - UPDATE OR DELETE]()
-
 ## Recommendation: Should you do this on your server?
 ### Short answer is YES! (If you already know "you want to do this" and need a guide, skip over the rest of this section and get to the "How To DO IT" area.)
 - I will guide you through a "basic" method, this method will have you set up and running in minutes!  Roughly only a few *copy pasta* steps to get APT Cacher NG running!  The basic method is so easy, even I can do it. So for the time spent to get anything done is a WIN.  Amount Cached / Time Spent = Winner Winner Chicken dinner.
