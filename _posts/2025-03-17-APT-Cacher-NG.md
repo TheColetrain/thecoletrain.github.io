@@ -172,7 +172,7 @@ Remap-proxmox: debrep/dists/pve/*/binary-amd64/Packages* ; http://download.proxm
 PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 ```
 2. On the GUI 
-![](Images/APT-Cache-NG/guided_precaching.png)
+![guided precaching](Images/APT-Cache-NG/guided_precaching.png)
 
 
 
@@ -204,7 +204,7 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 # MY DATA
 - You can see that I am not getting everything, but it is getting some and it's hassle free now that it is set up.
 
-- ![](Images/APT-Cache-NG/Transfer Statistics.png)
+- ![Transfer Statistics](Images/APT-Cache-NG/Transfer Statistics.png)
 
 
 
