@@ -187,7 +187,7 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 - That wasn't bad, right?  Done with **Phase 2**
 
 
-**Phase 3** 
+- ### **Phase 3** 
 - Full disclosure, I quit bothering with this. The trouble of trying to update, and getting an error, and then diving back into `acng.conf` file and adding something, then trying an update again, was more of a pain than I wanted to deal with.  Perhaps, you have better luck.  Ideally, if you resolve every error, by adding to this, then everything will be great.  But just as I thought I had it figured out, I got another error, and said "To heck with it."
 
  - The default is: `PassThroughPattern: .*` and that lets everything through.
@@ -213,13 +213,13 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 
 
 # MY DATA
-- You can see that I am not getting everything, but it is getting some and it's hassle free now that it is set up.
+- You can see that I am not getting everything, half, but it is getting some and it's hassle free now that it is set up.
 
 - ![Transfer Statistics](Images/APT-Cache-NG/Transfer Statistics.png)
 
 
 
-# Additional commands
+## Additional commands
 
 - for a "do release upgrade" - `sudo HTTP_PROXY="http://192.168.1.125:3142" do-release-upgrade`
 
@@ -233,7 +233,7 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 
 
 
-# Sources
+## Sources
 - On the GUI `http://192.168.1.215:3142/acng-report.html` (replace your IP) 
 under *"Configuration instructions"** there is a "manual" link.
 - I think this is the same - [https://www.unix-ag.uni-kl.de/~bloch/acng/html/index.html](https://www.unix-ag.uni-kl.de/~bloch/acng/html/index.html)
