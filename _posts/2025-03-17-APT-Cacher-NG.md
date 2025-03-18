@@ -38,34 +38,40 @@ APT-Cacher-NG is designed to cache Ubuntu, Debian, and other Linux distributions
 
 
 ## HOW TO DO IT
-- ### **Phase 1** 
-1. I have proxmox. I like Proxmox.  I like LXC's.  I like "easy."  Paste this script into your **main PVE console.**\
-(*There is an `apt-get install` out there if you want to make an Ubuntu or Debian VM as well.*) I wil be using the Proxmox LXC becasue it is lightweight and easy.
-```
-bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/ct/apt-cacher-ng.sh)"
-```
-- If you have not heard of Proxmox Helper Scripts, you should look around at them a bit more when you’re done with this! (*A lot of these were created by—and used to be run by **tteck**, if that rings a bell.*)\
-[Proxmox Helper Scripts - APT Cacher NG](https://community-scripts.github.io/ProxmoxVE/scripts?id=apt-cacher-ng) 
-:-)
-Can't get easier than **Copy Pasta**, right? Follow the prompts.
+
+- ### **Phase 1**
+
+**A.** I have proxmox. I like Proxmox. I like LXC's. I like "easy." Paste this script into your **main PVE console.**  
+(*There is an `apt-get install` out there if you want to make an Ubuntu or Debian VM as well.*) I will be using the Proxmox LXC because it is lightweight and easy.  
+
+**B.** If you have not heard of Proxmox Helper Scripts, you should look around at them a bit more when you’re done with this!  
+(*A lot of these were created by—and used to be run by **tteck**, if that rings a bell.*)  
+
+```bash
+ bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/ct/apt-cacher-ng.sh)"
+``` 
+ 
+ - [Proxmox Helper Scripts - APT Cacher NG](https://community-scripts.github.io/ProxmoxVE/scripts?id=apt-cacher-ng)  
 
 
-2. When that install finishes, you will get something like this.
-```
 
-  🚀  Apt-Cacher-NG setup has been successfully initialized!
-  💡   Access it using the following URL:
-    🌐  http://192.168.1.215:3142/acng-report.html
+- Can't get easier than **Copy Pasta**, right? Follow the prompts.  
 
-```    
+- When that install finishes, you will get something like this.  
 
-- Click the link, or type/paste it in a web browser. This is the APT Cache GUI. You won't have anything there yet—so just save it, bookmark it, or note it for later.
-- Also, make sure you have set up a DHCP reservation or a static IP, so the IP doesn't change on you.
+    > 🚀  Apt-Cacher-NG setup has been successfully initialized!  
+    > 💡   Access it using the following URL:  
+    > 🌐  http://192.168.1.215:3142/acng-report.html  
+
+**C.** Click the link, or type/paste it in a web browser. This is the APT Cache GUI. You won't have anything there yet—so just save it, bookmark it, or note it for later.  
+
+**D.** Also, make sure you have set up a DHCP reservation or a static IP, so the IP doesn't change on you.  
+
 
 
 #### THE SERVER IS SET!
 
-3. I told you that was easy. The final step of **Phase 1** is to update the client. Here is the easy way, and then I’ll explain.
+**E.** I told you that was easy. The final step of **Phase 1** is to update the client. Here is the easy way, and then I’ll explain.
 This is the command—paste it on the CLIENT (do a VM or another Linux box; LXCs are a tad different). Replace the IP below with your Server IP.
 - This command tells the Ubuntu VM instance to look to the Server when it runs an update.
 
@@ -81,7 +87,7 @@ echo 'Acquire::http::Proxy "http://192.168.1.215:3142";' | sudo tee /etc/apt/apt
 
 
 
-4. **NOTES** on what we did, and more on Phase 1.
+**F.** **NOTES** on what we did, and more on Phase 1.
 - Located in **`/etc/apt-cacher-ng/acng.conf`**\
 The default config in the LXC Server is `PassThroughPattern: .*`\
 
@@ -121,7 +127,8 @@ sudo sed -i 's#http://HTTPS///#https://#g' /etc/apt/sources.list.d/docker.list
 
 
 - ### **Phase 2**: Cache some repositories
-  1. This phase takes up a little space—not much, really. We are going to list repositories to cache and then hit the GUI button to cache them.
+
+**A.** This phase takes up a little space—not much, really. We are going to list repositories to cache and then hit the GUI button to cache them.
      Here are the two things you need (replace your IP's here):
      - GUI: http://192.168.1.215:3142/acng-report.html
      - CONFIG on the SERVER: **`/etc/apt-cacher-ng/acng.conf`**
@@ -169,7 +176,7 @@ PrecacheFor: debrep/pool/main/r/redis
 Remap-proxmox: debrep/dists/pve/*/binary-amd64/Packages* ; http://download.proxmox.com/debian/pve
 PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 ```
-2. On the GUI 
+**B.**On the GUI 
 ![guided precaching](Images/APT-Cache-NG/guided_precaching.png)
 
 
@@ -179,18 +186,24 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 
 - That wasn't bad, right?  Done with **Phase 2**
 
-- I will add this note here.  At one point, I added this command to the `acng.conf.` I don't recall if it is still needed.  I think I needed it when I was messing around with Phase 3. `AllowUserPorts: 80 443` 
 
 **Phase 3** 
 - Full disclosure, I quit bothering with this. The trouble of trying to update, and getting an error, and then diving back into `acng.conf` file and adding something, then trying an update again, was more of a pain than I wanted to deal with.  Perhaps, you have better luck.  Ideally, if you resolve every error, by adding to this, then everything will be great.  But just as I thought I had it figured out, I got another error, and said "To heck with it."
 
  - The default is: `PassThroughPattern: .*` and that lets everything through.
+
  - I suggest `PassThroughPattern: ^(.*):443$` since that lets all HTTPS through.
+
  - If you want to get granular and make sure nothing gets through that shouldn’t, uncomment the above and add something like this:\
-   `PrecacheFor: debrep/dists/unstable/*/source/Sources* debrep/dists/unstable/*/binary-amd64/Packages*`\
+   `PassThroughPattern: (packagecloud\.io|packagecloud-repositories\.s3\.dualstack\.us-west-1\.amazonaws\.com|packagecloud-prod\.global\.ssl\.fastly\.net):443$`
+   
+   `PassThroughPattern: ^(bugs\.debian\.org|changelogs\.ubuntu\.com):443$`
+
  - Adjust as needed.
+
  - I got to this point and gave up:\
-   `PassThroughPattern: ^(changelogs\.ubuntu\.com|download\.docker\.com|developer\.download\.nvidia\.com|apt\.grafana\.com|repos\.influxdata\.com|ppa\.launchpad\.net|p>`\
+   `PassThroughPattern: ^(changelogs\.ubuntu\.com|download\.docker\.com|developer\.download\.nvidia\.com|apt\.grafana\.com|repos\.influxdata\.com|ppa\.launchpad\.net|p>`\  (maybe I was doing it wrong?)
+
    Reverting back to:\
    `PassThroughPattern: ^(.*):443$`
 
@@ -203,6 +216,18 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 - You can see that I am not getting everything, but it is getting some and it's hassle free now that it is set up.
 
 - ![Transfer Statistics](Images/APT-Cache-NG/Transfer Statistics.png)
+
+
+
+# Additional commands
+
+- for a "do release upgrade" - `sudo HTTP_PROXY="http://192.168.1.125:3142" do-release-upgrade`
+
+- or bypass the proxy `sudo HTTP_PROXY="" do-release-upgrade`
+
+- Follow the Logs in a LXC - `tail -f /var/log/apt-cacher-ng/apt-cacher.log | pv -q -L 1k`
+
+- Removes it from an LXC - `rm /etc/apt/apt.conf.d/00aptproxy` - in the LXC console.
 
 
 
