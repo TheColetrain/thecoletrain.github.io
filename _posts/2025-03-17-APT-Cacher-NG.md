@@ -4,7 +4,7 @@ description: Creating a local Cache of Ubuntu, Debian and Linux Mirrors.
 date: 2025-03-17 01:03:00 CST
 layout: post
 categories:  [homelab, cache]
-tags: [cache, apt cacher ng, linux, debian, ubuntu, linux, proxmox, lxc]   # Tag names should always be lowercase
+tags: [cache, apt-cacher-ng, linux, debian, ubuntu, linux, proxmox, lxc]   # Tag names should always be lowercase
 permalink: /APT-Cacher-NG/
 ---
 
