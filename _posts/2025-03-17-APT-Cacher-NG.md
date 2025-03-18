@@ -130,9 +130,9 @@ sudo sed -i 's#http://HTTPS///#https://#g' /etc/apt/sources.list.d/docker.list
 
 **A.** This phase takes up a little space—not much, really. We are going to list repositories to cache and then hit the GUI button to cache them.
      Here are the two things you need (replace your IP's here):
-     - GUI: http://192.168.1.215:3142/acng-report.html
-     - CONFIG on the SERVER: **`/etc/apt-cacher-ng/acng.conf`**
-     - First, I would advise pasting any updates you plan to make at the top of the `acng.conf` file. (I pasted mine where it was already discussed by default—and yes, I did a LOT of scrolling while messing with it.)
+  - GUI: `http://192.168.1.215:3142/acng-report.html` 
+  - CONFIG on the SERVER: **`/etc/apt-cacher-ng/acng.conf`**
+  - First, I would advise pasting any updates you plan to make at the top of the `acng.conf` file. (I pasted mine where it was already discussed by default, far down the page, —and yes, I did a LOT of scrolling while messing with it.)
 
 
 - In your `acng.conf` file paste any of the below you want to Cache. I utilized ChatGPT to put some of this together, seems legit to me though!  Or, if you don't know either, copy and paste into yours.
