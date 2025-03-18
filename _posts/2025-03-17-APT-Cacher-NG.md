@@ -202,7 +202,7 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 # MY DATA
 - You can see that I am not getting everything, but it is getting some and it's hassle free now that it is set up.
 
-- ![alt text](image-1.png)
+- [](Images/APT-Cache-NG/Transfer Statistics.png)
 
 
 
