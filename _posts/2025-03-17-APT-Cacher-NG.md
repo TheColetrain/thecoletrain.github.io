@@ -8,12 +8,12 @@ tags: [cache, apt cacher ng, linux, debian, ubuntu, linux, proxmox, lxc]   # Tag
 permalink: /APT-Cacher-NG/
 ---
 
-#  APT Cacher NG - About IT and Overview 
+#  APT Cacher NG - About and Overview 
 ---
 
 
 
-## ## Overview of APT-Cacher-NG
+## Overview of APT-Cacher-NG
 APT-Cacher-NG is designed to cache Ubuntu, Debian, and other Linux distributions and packages locally. If you have a homelab, you probably have a lot of VM's. When one of your machines updates, those updates are stored here. The next machine that is the same or similar can pull from the cache locally instead of going out to the internet again.
 
 ## My Purpose & Goals
@@ -22,7 +22,7 @@ APT-Cacher-NG is designed to cache Ubuntu, Debian, and other Linux distributions
 3. We are helping Linux, being a good steward of the internet.  If we all do this, that will be less download bandwidth on these distro's.  That will allow them to allocate resources elsewhere than handling all the requests.
 
 
-[ANCHOR LINK TEST - UPDATE OR DELETE](https://vscode.dev/github/TheColetrain/thecoletrain.github.io/blob/main/_posts/draft-2025-03-17-APT-Cacher-NG.md#L59)
+[ANCHOR LINK TEST - UPDATE OR DELETE]()
 
 ## Recommendation: Should you do this on your server?
 ### Short answer is YES! (If you already know "you want to do this" and need a guide, skip over the rest of this section and get to the "How To DO IT" area.)
@@ -109,7 +109,7 @@ chmod +x /usr/local/bin/apt-proxy-detect.sh
 
 
 - ### **Phase 1: Part #2** 
-- *HOST commands* – I’m calling this Phase 1 second part because I wanted to show how easy Phase 1 can be (above), and this adds a step. I wasn’t lying—the above works, but I’d move on and add this because it’s pretty easy. APT-Cacher-NG doesn’t work on HTTPS. A lot of your repositories are already HTTP, so that is why the above works. But this converts more of them to HTTP. I’m going to list three commands; you’ll see how similar they are. Adapt these commands to any other folders you want to try. Go ahead and cd on down in there and see what’s going on, if you like. I personally have strung these three together with `&&` and pasted them as one command. The third command will error if that folder doesn't exist—no harm though, and if the folder does exist, well, great, it updates it.
+- *HOST commands* – I’m calling this Phase 1 second part because I wanted to show how easy Phase 1 can be (above), and this adds a step. I wasn’t lying, the above works, but I would advise to add this because it’s pretty easy. APT-Cacher-NG doesn’t work on HTTPS. A lot of your repositories are already HTTP, so that is why the above works. But this converts more of them to HTTP. I’m going to list three commands; you’ll see how similar they are. Adapt these commands to any other folders you want to try. Go ahead and cd on down in there and see what’s going on, if you like. I personally have strung these three together with `&&` and pasted them as one command. The third command will error if that folder doesn't exist—no harm though, and if the folder does exist, well, great, it updates it.
 
 ```bash
 sudo sed -i 's#https://#http://HTTPS///#g' /etc/apt/sources.list.d/*.list
@@ -172,7 +172,9 @@ Remap-proxmox: debrep/dists/pve/*/binary-amd64/Packages* ; http://download.proxm
 PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 ```
 2. On the GUI 
-![alt text](image.png)
+![](Images/APT-Cache-NG/guided_precaching.png)
+
+
 
 - The two boxs that are checked, are checked by default. Click the `Start Mirroring` button and it will show you what it will cache. (Not actually cache it.)
 - When you are ready, check the `download package files` box, and then the `Start Mirroring` and that will actually do it!
@@ -202,7 +204,7 @@ PrecacheFor: debrep/dists/pve/*/binary-amd64/Packages*
 # MY DATA
 - You can see that I am not getting everything, but it is getting some and it's hassle free now that it is set up.
 
-- [](Images/APT-Cache-NG/Transfer Statistics.png)
+- ![](Images/APT-Cache-NG/Transfer Statistics.png)
 
 
 

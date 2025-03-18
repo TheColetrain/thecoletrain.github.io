@@ -9,7 +9,7 @@ order: 5
 
 
 
-![Cole Edwards](https://github.com/TheColetrain/thecoletrain.github.io/blob/main/Cole%20Headshots/U357818_C_Edwards_v1_0.jpg?raw=true)
+![Cole Edwards](Images/Headshots/cole pic (2023_10_17 01_33_49 UTC).jpg)
 
 
 
