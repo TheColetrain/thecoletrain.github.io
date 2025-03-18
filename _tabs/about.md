@@ -16,10 +16,9 @@ Hello,
 I am a financial advisor that loves tinkering with tech!  Just launched this site, so more to come soon!
 
 
-
+![Cole Edwards](Images/Headshots/U357818_C_Edwards_v1_0.jpg)
 
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="cantstopthecoletrain" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/cantstopthecoletrain?trk=profile-badge">Cole Edwards</a></div>
 
-![Cole Edwards](Images/Headshots/U357818_C_Edwards_v1_0.jpg)
