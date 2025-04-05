@@ -13,7 +13,7 @@ pin: true
 
 
 
-# The Jekyll Project -
+# The Jekyll Project
 
 I wanted to create a website to showcase my resume and highlight some fun projects I've worked on. Techno Tim is one of my favorite YouTubers and tech enthusiasts, and he runs an awesome Discord. Naturally, I decided to follow his approach.
 
@@ -51,7 +51,7 @@ Here are Chirpy Notes:  [Chirpy - Getting Started](https://chirpy.cotes.page/pos
  port: 4314
  ```
 
-## Here is a quote for you.
+## Here is a quote for you
 
 *"Once you know what you are doing, it is really easy.  When you do NOT know what you are doing, it is really hard."*
 :-)
