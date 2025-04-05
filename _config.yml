@@ -86,6 +86,8 @@ analytics:
 pageviews:
   provider:goatcounter
 
+
+
 # Prefer color scheme setting.
 #
 # Note: Keep empty will follow the system prefer color by default,

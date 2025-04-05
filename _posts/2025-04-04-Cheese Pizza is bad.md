@@ -1,5 +1,5 @@
 ---
-title:  "Cheese Pizza Is What’s Wrong With the World"
+title:  "Cheese Pizza Is What’s Wrong With the World Today"
 description: Why cheese pizza is a bad choice—and why we need to stop serving it. It shouldn’t even be called pizza.
 date: 2025-04-04 10:03:00 CST
 layout: post
@@ -9,16 +9,17 @@ permalink: /cheese-pizza/
 pin: true
 ---
 
-# **Cheese Pizza Is What’s Wrong With the World Today**
 
-### **TL;DR**  
-Cheese pizza is the food equivalent of giving up. It’s lazy parenting, bland tradition, and gutless people-pleasing all wrapped into one greasy slice. If you don’t want to read the rant, skip to the last paragraph. But don’t pretend cheese pizza is *real* pizza.
+## **TL;DR**  
+
+Cheese pizza is the food equivalent of giving up. It’s lazy parenting, bland tradition, and gutless people-pleasing all wrapped into one greasy slice. If you don’t want to read the background, skip down a bit. But don’t pretend cheese pizza is *real* pizza.
 
 ---
 
 I **hate** cheese pizza. Not dislike—**hate**. And if that sounds dramatic, good. Because I’m sick of pretending it’s acceptable.
 
-I love pizza. I love *real* pizza. **Load it up—three or more toppings.**  
+I love pizza. I love *real* pizza. **Load it up—three or more toppings.**
+
 - Supreme? Perfection.
 - Meat Lovers? Awesome.
 - Anchovy, mushroom, and onion? Fantastic.  
@@ -32,6 +33,8 @@ Now look, I personally **don’t prefer a veggie pizza**. I like meat! (and vege
 
 ---
 
+## Join back here **TL;DR** people
+
 You know why cheese pizza is everywhere? Because parents today are afraid.  
 Afraid to make their kids eat something they didn’t specifically ask for.  
 Afraid to have a backbone.
@@ -43,7 +46,7 @@ We’re raising a generation of **precious little snowflakes** who can’t handl
 God forbid we traumatize the kid by exposing him to a vegetable. Or a flavor. Or anything remotely outside his toddler-approved food list. We wouldn’t want to damage our little snowflake now, would we?
 
 And look, I get it. Not everyone likes bell peppers.  
-If one kid frowns at a bell pepper, we cancel toppings for **everyone**? But seriously—**a bell pepper?** 
+If one kid frowns at a bell pepper, we cancel toppings for **everyone**? But seriously—**a bell pepper?**
 
 That’s not inclusivity. That’s **insanity**.
 
@@ -106,12 +109,12 @@ And I do. I stand for parents showing their kids what’s right, and having a da
 I stand against the virus of snowflake kids and the **mountain of cheese pizzas** shoved down our throats at every party.
 
 And I’ll thank my dad for playing Hank Williams Jr.’s  
-**“The Coalition to Ban Coalitions”**  
-for me when I was a kid. That one stuck. Let's get back to a more traditional America!
+**“The Coalition to Ban Coalitions”** for me when I was a kid. That one stuck with me to reprent the malarki in this world. Let's get back to a more traditional America!
 
 ---
 
-So please—**stop buying cheese pizza for your kids.**  
+## So please—**stop buying cheese pizza for your kids, my kids and at gatherings.**
+
 Make your kid eat his or her veggies.  
 And anyone that’s offended? They’re wrong—**and they should rethink their life choices.**
 
