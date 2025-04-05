@@ -13,7 +13,7 @@ pin: true
 
 
 
-# The Jekyll Project - 
+# The Jekyll Project -
 
 I wanted to create a website to showcase my resume and highlight some fun projects I've worked on. Techno Tim is one of my favorite YouTubers and tech enthusiasts, and he runs an awesome Discord. Naturally, I decided to follow his approach.
 
@@ -32,29 +32,33 @@ Here are Chirpy Notes:  [Chirpy - Getting Started](https://chirpy.cotes.page/pos
 # Viewing the site Internally
 
 ### 1. The first issue I encountered was getting the local site running. I was using a VM on Proxmox and tried accessing it:
+
   - Via the VM IP + Port (e.g. `192.168.10.55:4000`) *did not work* 
   - `localhost:4000` *did not work* 
   - In the short term, **`http://127.0.0.1:4000`** worked.  (But I did not think to try it for some time. I mistakingly thought localhost and 127.0.0.1 were the same, andthey are not. Seems easy now, but it took me a while before i realized. 😖 )  
   
 ### 2. I got it working using VS Code. 
+
     **If you are using Dev Containers, run the command in the VS Code Terminal.**
   [Chirpy Getting Started](https://chirpy.cotes.page/posts/getting-started/)
   (Look for the command highlighted in blue further down the page.)
 
 ### 3. Additionally, add the following to the top of your `_config.yml` (My favorite solution!):
+
  ```yml
  # Server settings
  host: 192.168.1.55
  port: 4314
  ```
 
-## Here is a quote for you. 
+## Here is a quote for you.
 
 *"Once you know what you are doing, it is really easy.  When you do NOT know what you are doing, it is really hard."*
 :-)
 
 
 # Site Structure
+
 Once you get it up and running, I guess all these Tech guys just know things intuitively.  But I did not.  I did not know what the header meant, what all the codes were.
 
 **`_site` Directory**: This is the output directory where Jekyll generates the static site. **Do not** place new files here directly; instead, Jekyll builds your site into the `_site` folder.Producing the final HTML files and assets.
@@ -71,6 +75,7 @@ Once you get it up and running, I guess all these Tech guys just know things int
 
 
 # Tags and Categories
+
 If you are using Chirpy, you need to figure out Tags and Categories. They will go in the heading syntax, in yaml format.  I will paste mine here without the lines "-" so you can see how it looks.
 
 ```yaml
@@ -99,6 +104,7 @@ Look at the above, and look at my site, hopefully this makes sense. On the home 
 ---
 
 # Push To Github - Get it online, in the real world!
+
 - `git status` Should show nothing at first, but could show pending changes.
 - `git add .`    (Don't forget the period)
 - `git status` will show green now.
